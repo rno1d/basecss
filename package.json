@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf build",
+    "clean": "rimraf dist",
     "dev": "npm run clean && webpack --watch",
     "nosourcemaps": "NODE_ENV=nosourcemaps webpack",
-    "build": "npm run clean && npm run nosourcemaps && cross-env NODE_ENV=production webpack -p && rimraf build/main.min.js"
+    "build": "npm run clean && npm run nosourcemaps && cross-env NODE_ENV=production webpack -p && rimraf dist/main.min.js"
   },
   "author": "Joel Longie <admin@joellongie.com> (http://joellongie.com/)",
   "license": "ISC",

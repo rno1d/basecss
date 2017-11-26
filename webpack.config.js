@@ -39,7 +39,7 @@ module.exports = {
     bundle: "./src/js/main.js"
   },
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "dist"),
     filename: "main.min.js",
   },
   devtool: PRODUCTION || NOSOURCEMAPS ? '' : 'inline-source-map',
