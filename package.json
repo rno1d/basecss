@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf build",
     "dev": "npm run clean && webpack --watch",
-    "build": "npm run clean && webpack && cross-env NODE_ENV=production webpack -p"
+    "build": "npm run clean && webpack && cross-env NODE_ENV=production webpack -p && rimraf build/main.min.js"
   },
   "author": "Joel Longie <admin@joellongie.com> (http://joellongie.com/)",
   "license": "ISC",
