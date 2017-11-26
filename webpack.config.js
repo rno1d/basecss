@@ -4,6 +4,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
+const NOSOURCEMAPS = process.env.NODE_ENV === 'nosourcemaps';
+
 
 const CSS_LOADER = PRODUCTION
 ? ExtractTextPlugin.extract({
@@ -40,7 +42,7 @@ module.exports = {
     path: path.resolve(__dirname, "build"),
     filename: "main.min.js",
   },
-  devtool: PRODUCTION ? '' : 'inline-source-map',
+  devtool: PRODUCTION || NOSOURCEMAPS ? '' : 'inline-source-map',
   module: {
     rules: [
       {
