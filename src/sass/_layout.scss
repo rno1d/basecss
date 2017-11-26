@@ -1,0 +1,89 @@
+// **********************************************************************
+// Layout
+// **********************************************************************
+
+// this div needed to sticky footer
+#site {
+  // margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#header,
+#content,
+#footer {
+  display: flex;
+  justify-content: center;
+}
+
+#header .container,
+#content .container,
+#footer .container {
+  width: 100%;
+  max-width: $content-width;
+}
+
+#primary {
+  overflow: hidden;
+}
+
+#primary,
+#secondary {
+  padding: $content-padding;
+
+  @include desktop {
+    padding: $content-padding-desktop;
+    width: 100%;
+  }
+}
+
+.header-content,
+#footer .container {
+  padding: $content-padding;
+
+  @include desktop {
+    padding: $content-padding-desktop;
+  }
+}
+
+.header-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#header .container {
+  position: relative;
+}
+
+#footer .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#content {
+  display: flex;
+  flex: 1;
+
+  .container {
+    flex: 1;
+    padding-top: 100px;
+
+    @include desktop {
+      display: flex;
+    }
+
+    #primary {
+      // @include desktop {
+      //
+      // }
+    }
+
+    #secondary {
+      @include desktop {
+        flex: 0 0 300px;
+        padding-left: -30px;
+      }
+    }
+  }
+}

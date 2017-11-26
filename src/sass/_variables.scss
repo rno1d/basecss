@@ -1,0 +1,69 @@
+// **********************************************************************
+// Variables
+// **********************************************************************
+
+// @import url("https://fonts.googleapis.com/css?family=Roboto");
+// $font-family-roboto: 'Roboto', sans-serif;
+
+//@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
+// $font-family-libre-franklin: 'Libre Franklin', sans-serif;
+
+// $font-family-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+
+// MEDIA QUERIES
+$desktop: 768px;
+
+// LAYOUT
+$content-width: 1200px;
+$content-padding: 10px;
+$content-padding-desktop: 30px;
+
+// TYPOGRAPHY
+$font-family-title: $font-family-sans-serif;
+$font-family-primary: $font-family-sans-serif;
+$font_mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+  "Courier New", monospace;
+$font-weight-title: 400;
+$font-weight-body: 400;
+
+$font-size: 100%;
+$font-size-mobile: 100%;
+$font-size-code: 94%;
+
+$line-height: 1.5em;
+$line-height-mobile: 1.5em;
+
+// COLORS
+$color1: #865cd6; // purple
+
+$body-text-color: #333;
+$body-background-color: #fff;
+
+$white: #fff;
+$black: #3a3a3a;
+$grey: #ccc;
+$grey-light: lighten($grey, 16%);
+$grey-dark: darken($grey, 20%);
+
+$primary: #2196f3;
+$success: #4CAF50;
+$danger: #f44336;
+$accent: #ff4081;
+$dark: #333;
+$light: #fff;
+
+// COLORS: Links
+$link_color: $color1;
+$link_hover: darken($color1, 20%);
+
+// COLORS: Buttons
+$button-color: $color1;
+$button-color-hover: darken($button-color, 10%);
+$button-color-disabled: $button-color;
+
+// border-radius for items (buttons, alerts, etc...)
+$border-radius: 0px;

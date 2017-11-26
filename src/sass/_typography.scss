@@ -1,0 +1,179 @@
+// **********************************************************************
+// Links
+// **********************************************************************
+a,
+a:visited {
+  text-decoration: none;
+  color: $link_color;
+  @include transition-all(0.5s);
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: $link_hover;
+  @include transition-all(0.5s);
+}
+
+// **********************************************************************
+// Typography
+// **********************************************************************
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-title;
+  font-weight: $font-weight-title;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+  @include desktop {
+    text-align: left;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+h1#post-title {
+  margin-top: 0;
+}
+
+p.site-description {
+  text-align: center;
+  margin-top: 0.5rem;
+  @include desktop {
+    text-align: left;
+  }
+}
+
+p.logged-in-as {
+  text-align: center;
+}
+
+blockquote {
+  border-left: 10px solid $color1;
+  margin: 30px 0 36px;
+  padding-left: 30px;
+  line-height: 2em;
+  p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+  }
+}
+.blockquote-footer::before {
+  content: "\2014 \00A0";
+}
+
+mark {
+  background-color: $accent;
+  color: #fff;
+}
+
+// **********************************************************************
+// highlighing text with cursor colors
+// **********************************************************************
+::selection {
+  background-color: $color1;
+  color: $white;
+}
+
+// **********************************************************************
+// Helpers
+// **********************************************************************
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// **********************************************************************
+// Code
+// **********************************************************************
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: $font-size-code;
+}
+
+code {
+  background: #efefef;
+  padding: 2px;
+  color: $danger;
+}
+
+pre {
+  background: $body-text-color;
+  padding: 20px 30px;
+  white-space: pre-wrap; //css3
+  white-space: moz-pre-wrap; //firefox
+  white-space: -pre-wrap; //opera 4-6
+  white-space: -o-pre-wrap; //opera 7
+  word-wrap: break-word; //internet explorer
+  border-radius: $border-radius;
+
+  code {
+    background: transparent;
+    color: #bfbfbf;
+  }
+}
+
+// **********************************************************************
+// Lists
+// **********************************************************************
+
+ul {
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+
+main#main{
+  ul {
+    padding: 0px 30px;
+    list-style-position: inside;
+  }
+  li{
+    list-style: unset;
+  }
+}

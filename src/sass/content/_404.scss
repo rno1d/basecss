@@ -1,0 +1,18 @@
+// **********************************************************************
+// 404 Page
+// **********************************************************************
+
+.error404 {
+  .search-form.error404,
+  select#archives-dropdown--1 {
+    padding: 40px 0;
+
+    @include desktop {
+      width: 500px;
+    }
+  }
+
+  .widget {
+    padding-bottom: 30px;
+  }
+}

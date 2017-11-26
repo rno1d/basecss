@@ -1,0 +1,80 @@
+// **********************************************************************
+// Tables
+// **********************************************************************
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #e9ecef;
+  }
+
+  td,
+  th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #e9ecef;
+  }
+
+  th {
+    text-align: inherit;
+  }
+
+  tbody tr {
+    @include transition-all(0.3s);
+    &:hover {
+      background: $grey-light;
+      @include transition-all(0.3s);
+    }
+  }
+
+  // Colored rows
+  tr.primary {
+    @include transition-all(0.3s);
+    &:hover {
+      background: darken($color1, 20%);
+      @include transition-all(0.3s);
+    }
+  }
+
+  tr.success {
+    @include transition-all(0.3s);
+    &:hover {
+      background: darken($success, 10%);
+      @include transition-all(0.3s);
+    }
+  }
+
+  tr.danger {
+    @include transition-all(0.3s);
+    &:hover {
+      background: darken($danger, 15%);
+      @include transition-all(0.3s);
+    }
+  }
+
+  tr.accent {
+    @include transition-all(0.3s);
+    &:hover {
+      background: darken($accent, 20%);
+      @include transition-all(0.3s);
+    }
+  }
+
+  tr.dark {
+    @include transition-all(0.3s);
+    &:hover {
+      background: lighten($dark, 20%);
+      @include transition-all(0.3s);
+    }
+  }
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}

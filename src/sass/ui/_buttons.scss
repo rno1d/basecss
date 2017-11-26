@@ -1,0 +1,47 @@
+// **********************************************************************
+// Buttons
+// **********************************************************************
+
+button {
+  font-size: 100%; /* Corrects font size not being inherited in all browsers */
+  margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+}
+
+.button,
+button,
+button a,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  background: $button-color;
+  color: $white !important;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 1em 2.5em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  border: 0 none;
+  margin: 0 2px;
+  font-size: 14px;
+  font-weight: $font-weight-body;
+  font-family: $font-family-title;
+  text-transform: capitalize;
+  @include fade;
+  border-radius: $border-radius;
+  &:hover {
+    background: $button-color-hover;
+  }
+}
+
+.btn-block {
+  display: block !important;
+  width: 100%;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}

@@ -1,0 +1,31 @@
+// **********************************************************************
+// Author Page
+// **********************************************************************
+
+#author-bio {
+  .author-header {
+    text-align: center;
+
+    img {
+      width: inherit;
+    }
+  }
+
+  ul.author-social-profiles {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding-right: 10px;
+    }
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h3.author-title {
+    text-align: inherit;
+  }
+}

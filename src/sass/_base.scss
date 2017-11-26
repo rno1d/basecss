@@ -1,0 +1,88 @@
+// **********************************************************************
+// Base styles
+// **********************************************************************
+
+html {
+  box-sizing: border-box;
+  line-height: $line-height;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $body-text-color;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: $line-height;
+  font-weight: $font-weight-body;
+  font-family: $font-family-primary;
+  overflow-y: scroll;
+  background: $body-background-color;
+
+  // media query mixin, see /helpers/_mixins.scss
+  // @include desktop {
+  //   // background: $grey-dark;
+  // }
+}
+
+hr {
+  border: solid $grey;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+  margin: 40px 0;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+// **********************************************************************
+// Colors
+// **********************************************************************
+
+.primary {
+  background: $primary !important;
+  color: $white !important;
+}
+
+.success {
+  background: $success !important;
+  color: $white !important;
+}
+
+.danger {
+  background: $danger !important;
+  color: $white !important;
+}
+
+.accent {
+  background: $accent !important;
+  color: $white !important;
+}
+
+.dark {
+  background: $dark !important;
+  color: $white !important;
+}
+
+.light {
+  background: $light !important;
+  color: $body-text-color !important;
+}

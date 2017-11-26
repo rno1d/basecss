@@ -1,14 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="./dist/main.css">
+  <style>
+    #app {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello</h1>
-  <h2>sdfsdf</h2>
+  <div id="app">
+    <h1>Base-Styles: Style Sheet</h1>
+
+    <hr>
+    <h1>h1 heading</h1>
+    <h2>h2 heading</h2>
+    <h3>h3 heading</h3>
+    <h4>h4 heading</h4>
+    <h5>h5 heading</h5>
+    <h6>h6 heading</h6>
+
+    <hr>
+
+    <h3>Body Text</h3>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+      aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+      no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+      diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+      et justo duo dolores et ea rebum.</p>
+    <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+      sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+      At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+      ipsum dolor sit amet.</p>
+
+    <hr>
+
+    <h3>links</h3>
+    <div>This sentence contains a
+      <a href="#">link in the middle</a> of it.</div>
+    <hr>
+
+    <h3>Inline</h3>
+
+    <p>
+      <code>&lt;mark&gt;</code> You can use the mark tag to
+      <mark>highlight</mark> text.
+    </p>
+
+    <p>
+      <code>&lt;del&gt;</code>
+      <del>This line of text is meant to be treated as deleted text.</del>
+    </p>
+    <p>
+      <code>&lt;s&gt;</code>
+      <s>This line of text is meant to be treated as no longer accurate.</s>
+    </p>
+    <p>
+      <code>&lt;ins&gt;</code>
+      <ins>This line of text is meant to be treated as an addition to the document.</ins>
+    </p>
+    <p>
+      <code>&lt;u&gt;</code>
+      <u>This line of text will render as underlined</u>
+    </p>
+    <p>
+      <code>&lt;small&gt;</code>
+      <small>This line of text is meant to be treated as fine print.</small>
+    </p>
+    <p>
+      <code>&lt;strong&gt;</code>
+      <strong>This line rendered as bold text.</strong>
+    </p>
+    <p>
+      <code>&lt;em&gt;</code>
+      <em>This line rendered as italicized text.</em>
+    </p>
+    <hr>
+
+    <h3>colors</h3>
+    <div class="primary" style="padding: 30px; display: inline-block;">primary</div>
+    <div class="success" style="padding: 30px; display: inline-block;">success</div>
+    <div class="danger" style="padding: 30px; display: inline-block;">danger</div>
+    <div class="accent" style="padding: 30px; display: inline-block;">accent</div>
+    <div class="dark" style="padding: 30px; display: inline-block;">dark</div>
+    <div class="light" style="padding: 30px; display: inline-block;">light</div>
+
+    <hr>
+
+    <h3>code</h3>
+    For example,
+    <code>&lt;section&gt;</code> should be wrapped as inline.
+    <pre><code>&lt;p&gt;example text here...&lt;/p&gt;
+  &lt;p&gt;And another line of sample text here...&lt;/p&gt;
+  </code></pre>
+
+    <hr>
+
+    <h3>lists</h3>
+    <h4>Unordered list</h4>
+    <ul>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Integer molestie lorem at massa</li>
+      <li>Facilisis in pretium nisl aliquet</li>
+      <li>Nulla volutpat aliquam velit
+        <ul>
+          <li>Phasellus iaculis neque</li>
+          <li>Purus sodales ultricies</li>
+          <li>Vestibulum laoreet porttitor sem</li>
+          <li>Ac tristique libero volutpat at</li>
+        </ul>
+      </li>
+      <li>Faucibus porta lacus fringilla vel</li>
+      <li>Aenean sit amet erat nunc</li>
+      <li>Eget porttitor lorem</li>
+    </ul>
+    <h4>Ordered list</h4>
+    <ol>
+      <li>one</li>
+      <li>two</li>
+      <li>thee</li>
+    </ol>
+
+    <hr>
+
+    <h3>Blockquotes</h3>
+    <blockquote class="blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante, sed diam nonumy eirmod tempor invidunt
+      ut labore et dolore magna aliquyam erat.
+
+      <footer class="blockquote-footer">Someone famous in
+        <cite title="Source Title">Source Title</cite>
+      </footer>
+    </blockquote>
+
+    <hr>
+
+    <h3>alignment</h3>
+    <code>&lt;p class="text-left"&gt;</code>
+    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <code>&lt;p class="text-center"&gt;</code>
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <code>&lt;p class="text-right"&gt;</code>
+    <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+
+    <hr>
+
+    <h3>tables</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+    &nbsp;
+    <h4>colors: primary, success, danger, accent, dark, light</h4>
+    <table>
+      <thead>
+        <tr class="accent">
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+    &nbsp;
+    <h4>Responsive class="table-responsive"</h4>
+    <table class="table-responsive">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Username</th>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Username</th>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Username</th>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h3>Alert</h3>
+    <div class="alert">This is an alert—check it out!</div>
+    <div class="alert primary">This is a primary alert—check it out!</div>
+    <div class="alert success">This is a success alert—check it out!</div>
+    <div class="alert danger">This is a danger alert—check it out!</div>
+    <div class="alert accent">This is an accent alert—check it out!</div>
+    <div class="alert dark text-center">This is a dark (text-center) alert—check it out!</div>
+    <div class="alert light">This is a light alert—check it out!</div>
+
+    <hr>
+
+    <h3>Buttons</h3>
+    <button>button</button>
+
+    <a class="button">link button</a>
+
+    <a class="button accent">button with color class</a>
+
+    <input type="submit" value="Submit button" />
+
+    <input type="button" value="Input button" />
+
+    <input type="reset" value="Input reset" />
+
+    <button class="btn-block">button block</button>
+
+    <button class="disabled">button disabled</button>
+
+    <hr>
+
+    <h3>forms</h3>
+    <form>
+      <div class="form-group">
+        <label>Text Input</label>
+        <input type="text" placeholder="stuff" />
+      </div>
+      <div class="form-group">
+        <label>Password Input</label>
+        <input type="password" placeholder="stuff" />
+      </div>
+      <div class="form-group">
+        <label>Date Input</label>
+        <input type="date" placeholder="stuff" />
+      </div>
+      <div class="form-group">
+        <label>Email Input</label>
+        <input type="email" placeholder="stuff" />
+      </div>
+      <div class="form-group">
+        <label>Search Input</label>
+        <input type="search" placeholder="stuff" />
+      </div>
+      <div class="form-group">
+        <label>URL Input</label>
+        <input type="url" placeholder="stuff" />
+      </div>
+      <div class="form-group">
+        <label>Select List</label>
+        <select>
+          <option value="stuff">stuff</option>
+          <option value="two">Two</option>
+          <option value="three">Three</option>
+          <option value="four">Four</option>
+        </select>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" /> Option One</label>
+        <label class="form-check-label">
+          <input type="checkbox" /> Option Two
+        </label>
+      </div>
+      <div class="form-group">
+        <label>Text Area</label>
+        <textarea></textarea>
+      </div>
+      <label for="file">
+        <input id="file" class="inputfile" name="file" type="file" />
+      </label>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+    <hr>
+
+    <h3>Basic Structure</h3>
+    <pre><code>
+  &lt;div id="app"&gt;
+  
+    &lt;header id="header"&gt;
+      &lt;div class="container"&gt;
+        content here...
+      &lt;/div&gt;
+    &lt;/header&gt;
+    
+    &lt;section id="section1"&gt;
+      &lt;div class="container"&gt;
+        content here...
+      &lt;/div&gt;
+    &lt;/section&gt;
+  
+  &lt;/div&gt;
+    </code></pre> Section run full width, container hold content and is constrained to primary area.
+    <code>&lt;class="wrapper"&gt;</code> can be used for anything but structure.
+
+
+  </div>
 </body>
+
 </html>

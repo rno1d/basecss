@@ -1,6 +1,57 @@
-@import "stuff";
+/*!
+Theme Name: wpsolidpack
+Theme URI: http://joellongie.com/
+Author: joelllongie.com
+Author URI: http://joellongie.com/about
+Description: Wordpress theme with webpack.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wpsolidpack
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-menu, featured-images, footer-widgets, post-formats, rtl-language-support
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
 
+// ***********************************
+// Helpers
+// ***********************************
+@import "helpers/normalize";
+@import "helpers/accessibility";
+@import "helpers/mixins";
+@import "variables";
 
-body{
-  background: red;
-}
+// ***********************************
+// Base styles
+// ***********************************
+@import "base";
+@import "layout";
+@import "typography"; // typography and links
+@import "media";
+
+// ***********************************
+// UI elements
+// ***********************************
+@import "ui/buttons";
+@import "ui/tables";
+@import "ui/forms";
+@import "ui/alerts";
+
+// ***********************************
+// Content
+// ***********************************
+@import "content/header";
+@import "content/footer";
+@import "content/posts";
+@import "content/pages";
+@import "content/front-page";
+@import "content/comments";
+@import "content/widgets";
+@import "content/author";
+@import "content/404";
+@import "content/search";
+
+// ***********************************
+// Navigation
+// ***********************************
+@import "navigation";

@@ -1,0 +1,195 @@
+// **********************************************************************
+// wpsolidpack Mobile Sidebar
+// **********************************************************************
+
+// This setting will set the position of the responsive sidebar.  It uses SASS conditionals to compile the correct CSS.
+$wpsolidpacksidebar-position: left; // left or right
+
+// Colors jlnav sidebar variables
+$wpsolidpacksidebar-background-color: #323439;
+$wpsolidpacksidebar-header-text-color: #64676f;
+$wpsolidpacksidebar-content-text-color: #c3c3c3;
+$wpsolidpacksidebar-nav-item-color: #828489;
+$wpsolidpacksidebar-nav-current-item-color: #edf1fa;
+
+// body wrap
+body.wpsolidpack-mobile-active {
+  overflow: hidden;
+}
+
+// mobile open button
+.wpsolidpack-mobile-sidebar-button {
+  position: absolute;
+  top: 12px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 99999;
+}
+.wpsolidpack-mobile-sidebar-button {
+  @if $wpsolidpacksidebar-position == left {
+    left: 10px;
+  } @else {
+    right: 10px;
+  }
+}
+
+// mobile close button
+.wpsolidpack-mobile-sidebar-button-close {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 10px;
+    padding: 15px;
+    cursor: pointer;
+
+    path {
+      fill: #fff;
+    }
+  }
+}
+.wpsolidpack-mobile-sidebar-button-close svg {
+  @if $wpsolidpacksidebar-position == left {
+    right: 20px;
+  } @else {
+    left: 20px;
+  }
+}
+
+#wpsolidpack-mobile-sidebar header,
+#wpsolidpack-mobile-sidebar .wpsolidpack-mobile-sidebar-content {
+  padding: 0px 30px;
+}
+
+// START mobile nav
+#wpsolidpack-mobile-sidebar {
+  @if $wpsolidpacksidebar-position == left {
+    transform: translateX(-100%);
+    left: 0px;
+  } @else {
+    transform: translateX(100%);
+    right: 0px;
+  }
+}
+
+#wpsolidpack-mobile-sidebar {
+  background: $wpsolidpacksidebar-background-color !important;
+  width: 90%;
+  max-width: 360px; // comment out for 100% width
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  color: #000;
+  z-index: 999998;
+  overflow: auto;
+  line-height: 2.5em;
+
+  header {
+    color: $wpsolidpacksidebar-header-text-color;
+
+    h2 {
+      text-align: left;
+      padding-top: 40px;
+      font-weight: 900;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    color: $wpsolidpacksidebar-content-text-color;
+  }
+
+  ul#menu-primary {
+    li a {
+      color: $wpsolidpacksidebar-nav-item-color;
+    }
+
+    li.current_page_item a,
+    li a:hover {
+      color: $wpsolidpacksidebar-nav-current-item-color;
+    }
+  }
+
+  ul.sub-menu {
+    padding-left: 20px;
+
+    li:before {
+      content: "- ";
+      color: $wpsolidpacksidebar-header-text-color;
+    }
+  }
+}
+
+// apply active class
+#wpsolidpack-mobile-sidebar.wpsolidpack-mobile-active {
+  transform: translateX(0px);
+}
+
+.wpsolidpack-mobile-sidebarClose {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #ccc;
+  font-size: 24px;
+}
+
+// overlay
+.wpsolidpack-mobile-menu-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  background: #333;
+  z-index: -9999999;
+}
+
+.wpsolidpack-mobile-menu-overlay.wpsolidpack-mobile-active {
+  opacity: 0.9;
+  z-index: 999990;
+}
+
+// **********************************************************************
+// Child Navigation
+// **********************************************************************
+
+nav.child-nav {
+  border-bottom: 1px solid $grey;
+  margin-bottom: 40px;
+
+  .child-nav-container {
+    display: flex;
+  }
+
+  a {
+    font-size: 13px;
+  }
+
+  p.parent-link a {
+    color: $body-text-color;
+
+    &:after {
+      content: ":";
+    }
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin-left: 5px;
+      padding: 2px 5px;
+    }
+
+    li.current_page_item {
+      background: $color1;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}
