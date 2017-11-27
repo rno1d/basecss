@@ -2,41 +2,13 @@
 Images
 ***********************************************************************/ 
 
-img,
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
+img{
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-.comment-author img {
-  width: inherit;
-}
 
 /***********************************************************************
 Icons
 ***********************************************************************/ 
-svg#icon-search {
-  width: 20px;
-
-  path {
-    fill: $white;
-  }
-}
-
-/***********************************************************************
-Captions
-***********************************************************************/ 
-.wp-caption {
-  text-align: center;
-}
-.wp-caption-text {
-  text-align: center;
-}
-.gallery-caption {
-  text-align: center;
-}

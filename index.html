@@ -13,6 +13,15 @@
       margin: 0 auto;
       padding: 40px;
     }
+
+    .button,
+    button,
+    button a,
+    input[type="submit"],
+    input[type="button"],
+    input[type="reset"] {
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 
@@ -20,14 +29,34 @@
   <div id="app">
     <h1>Base-Styles: Style Sheet</h1>
 
+    <h3>Basic Structure</h3>
+    <pre><code>
+&lt;div id="app"&gt;
+
+  &lt;header id="header"&gt;
+    &lt;div class="container"&gt;
+      content here...
+    &lt;/div&gt;
+  &lt;/header&gt;
+  
+  &lt;section id="section1"&gt;
+    &lt;div class="container"&gt;
+      content here...
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+&lt;/div&gt;
+    </code></pre> Section run full width, container hold content and is constrained to primary area.
+    <code>&lt;class="wrapper"&gt;</code> can be used for anything but structure.
     <hr>
+
+
     <h1>h1 heading</h1>
     <h2>h2 heading</h2>
     <h3>h3 heading</h3>
     <h4>h4 heading</h4>
     <h5>h5 heading</h5>
     <h6>h6 heading</h6>
-
     <hr>
 
     <h3>Body Text</h3>
@@ -40,7 +69,6 @@
       sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
       At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
       ipsum dolor sit amet.</p>
-
     <hr>
 
     <h3>links</h3>
@@ -49,12 +77,10 @@
     <hr>
 
     <h3>Inline</h3>
-
     <p>
       <code>&lt;mark&gt;</code> You can use the mark tag to
       <mark>highlight</mark> text.
     </p>
-
     <p>
       <code>&lt;del&gt;</code>
       <del>This line of text is meant to be treated as deleted text.</del>
@@ -92,16 +118,15 @@
     <div class="accent" style="padding: 30px; display: inline-block;">accent</div>
     <div class="dark" style="padding: 30px; display: inline-block;">dark</div>
     <div class="light" style="padding: 30px; display: inline-block;">light</div>
-
     <hr>
 
     <h3>code</h3>
     For example,
     <code>&lt;section&gt;</code> should be wrapped as inline.
-    <pre><code>&lt;p&gt;example text here...&lt;/p&gt;
-  &lt;p&gt;And another line of sample text here...&lt;/p&gt;
-  </code></pre>
-
+    <pre><code>
+&lt;p&gt;example text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+    </code></pre>
     <hr>
 
     <h3>lists</h3>
@@ -117,6 +142,18 @@
           <li>Purus sodales ultricies</li>
           <li>Vestibulum laoreet porttitor sem</li>
           <li>Ac tristique libero volutpat at</li>
+          <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+            <ul>
+              <li>Phasellus iaculis neque</li>
+              <li>Purus sodales ultricies</li>
+              <li>Vestibulum laoreet porttitor sem</li>
+              <li>Ac tristique libero volutpat at</li>
+            </ul>
+          </ul>
         </ul>
       </li>
       <li>Faucibus porta lacus fringilla vel</li>
@@ -129,18 +166,17 @@
       <li>two</li>
       <li>thee</li>
     </ol>
-
     <hr>
 
     <h3>Blockquotes</h3>
-    <blockquote class="blockquote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante, sed diam nonumy eirmod tempor invidunt
-      ut labore et dolore magna aliquyam erat.
+    <blockquote class="blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat.</p>
 
       <footer class="blockquote-footer">Someone famous in
         <cite title="Source Title">Source Title</cite>
       </footer>
     </blockquote>
-
     <hr>
 
     <h3>alignment</h3>
@@ -150,8 +186,6 @@
     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <code>&lt;p class="text-right"&gt;</code>
     <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-
     <hr>
 
     <h3>tables</h3>
@@ -297,7 +331,6 @@
         </tr>
       </tbody>
     </table>
-
     <hr>
 
     <h3>Alert</h3>
@@ -308,26 +341,17 @@
     <div class="alert accent">This is an accent alert—check it out!</div>
     <div class="alert dark text-center">This is a dark (text-center) alert—check it out!</div>
     <div class="alert light">This is a light alert—check it out!</div>
-
     <hr>
 
     <h3>Buttons</h3>
     <button>button</button>
-
     <a class="button">link button</a>
-
     <a class="button accent">button with color class</a>
-
     <input type="submit" value="Submit button" />
-
     <input type="button" value="Input button" />
-
     <input type="reset" value="Input reset" />
-
     <button class="btn-block">button block</button>
-
     <button class="disabled">button disabled</button>
-
     <hr>
 
     <h3>forms</h3>
@@ -379,33 +403,8 @@
       <label for="file">
         <input id="file" class="inputfile" name="file" type="file" />
       </label>
-
       <button type="submit">Submit</button>
-
     </form>
-
-    <hr>
-
-    <h3>Basic Structure</h3>
-    <pre><code>
-  &lt;div id="app"&gt;
-  
-    &lt;header id="header"&gt;
-      &lt;div class="container"&gt;
-        content here...
-      &lt;/div&gt;
-    &lt;/header&gt;
-    
-    &lt;section id="section1"&gt;
-      &lt;div class="container"&gt;
-        content here...
-      &lt;/div&gt;
-    &lt;/section&gt;
-  
-  &lt;/div&gt;
-    </code></pre> Section run full width, container hold content and is constrained to primary area.
-    <code>&lt;class="wrapper"&gt;</code> can be used for anything but structure.
-
 
   </div>
 </body>

@@ -31,11 +31,10 @@ body {
 }
 
 hr {
-  border: solid $grey;
-  border-width: 1px 0 0;
-  clear: both;
-  height: 0;
-  margin: 40px 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
 }
 
 .alignright {
@@ -52,6 +51,18 @@ hr {
   display: block;
   margin: 5px auto 5px auto;
 }
+
+/***********************************************************************
+Lists
+***********************************************************************/
+ul {
+  padding: 0;
+  list-style-position: inside;
+  ul{
+    padding-left: 30px;
+  }
+}
+
 
 /***********************************************************************
 Colors

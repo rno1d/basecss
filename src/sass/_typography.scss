@@ -65,21 +65,6 @@ p {
   margin-bottom: 1rem;
 }
 
-h1#post-title {
-  margin-top: 0;
-}
-
-p.site-description {
-  text-align: center;
-  margin-top: 0.5rem;
-  @include desktop {
-    text-align: left;
-  }
-}
-
-p.logged-in-as {
-  text-align: center;
-}
 
 blockquote {
   border-left: 10px solid $color1;
@@ -154,26 +139,5 @@ pre {
   code {
     background: transparent;
     color: #bfbfbf;
-  }
-}
-
-
-/***********************************************************************
-Lists
-***********************************************************************/
-ul {
-  padding: 0;
-}
-li{
-  list-style: none;
-}
-
-main#main{
-  ul {
-    padding: 0px 30px;
-    list-style-position: inside;
-  }
-  li{
-    list-style: unset;
   }
 }
