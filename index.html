@@ -169,14 +169,21 @@
     <hr>
 
     <h3>Blockquotes</h3>
-    <blockquote class="blockquote">
+    <blockquote>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante, sed diam nonumy eirmod tempor
         invidunt ut labore et dolore magna aliquyam erat.</p>
-
-      <footer class="blockquote-footer">Someone famous in
+      <footer>Someone famous in
         <cite title="Source Title">Source Title</cite>
       </footer>
     </blockquote>
+
+    <pre><code>
+&#x3C;blockquote&#x3E;
+  &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#x3C;/p&#x3E;
+  &#x3C;footer&#x3E;Someone famous in &#x3C;cite title=&#x22;Source Title&#x22;&#x3E;Source Title&#x3C;/cite&#x3E;
+&#x3C;/footer&#x3E;
+&#x3C;/blockquote&#x3E;
+    </code></pre>
     <hr>
 
     <h3>alignment</h3>
@@ -331,6 +338,27 @@
         </tr>
       </tbody>
     </table>
+
+    <pre><code>
+&#x3C;table&#x3E;
+&#x3C;thead&#x3E;
+  &#x3C;tr&#x3E;
+    &#x3C;th&#x3E;#&#x3C;/th&#x3E;
+    &#x3C;th&#x3E;First Name&#x3C;/th&#x3E;
+    &#x3C;th&#x3E;Last Name&#x3C;/th&#x3E;
+    &#x3C;th&#x3E;Username&#x3C;/th&#x3E;
+  &#x3C;/tr&#x3E;
+&#x3C;/thead&#x3E;
+&#x3C;tbody&#x3E;
+  &#x3C;tr&#x3E;
+    &#x3C;th&#x3E;1&#x3C;/th&#x3E;
+    &#x3C;td&#x3E;Bob&#x3C;/td&#x3E;
+    &#x3C;td&#x3E;Burger&#x3C;/td&#x3E;
+    &#x3C;td&#x3E;@bob_burger&#x3C;/td&#x3E;
+  &#x3C;/tr&#x3E;
+&#x3C;/tbody&#x3E;
+&#x3C;/table&#x3E;
+    </code></pre>
     <hr>
 
     <h3>Alert</h3>
@@ -341,6 +369,9 @@
     <div class="alert accent">This is an accent alert—check it out!</div>
     <div class="alert dark text-center">This is a dark (text-center) alert—check it out!</div>
     <div class="alert light">This is a light alert—check it out!</div>
+    <pre><code>
+&#x3C;div class=&#x22;alert primary&#x22;&#x3E;This is a primary alert&#x2014;check it out!&#x3C;/div&#x3E;
+    </code></pre>
     <hr>
 
     <h3>Buttons</h3>
@@ -352,33 +383,34 @@
     <input type="reset" value="Input reset" />
     <button class="btn-block">button block</button>
     <button class="disabled">button disabled</button>
+    <input id="file" class="inputfile" name="file" type="file" />
     <hr>
 
     <h3>forms</h3>
     <form>
       <div class="form-group">
         <label>Text Input</label>
-        <input type="text" placeholder="stuff" />
+        <input type="text" placeholder="text" />
       </div>
       <div class="form-group">
         <label>Password Input</label>
-        <input type="password" placeholder="stuff" />
+        <input type="password" placeholder="password" />
       </div>
       <div class="form-group">
         <label>Date Input</label>
-        <input type="date" placeholder="stuff" />
+        <input type="date" />
       </div>
       <div class="form-group">
         <label>Email Input</label>
-        <input type="email" placeholder="stuff" />
+        <input type="email" placeholder="email" />
       </div>
       <div class="form-group">
         <label>Search Input</label>
-        <input type="search" placeholder="stuff" />
+        <input type="search" placeholder="search" />
       </div>
       <div class="form-group">
         <label>URL Input</label>
-        <input type="url" placeholder="stuff" />
+        <input type="url" placeholder="select list" />
       </div>
       <div class="form-group">
         <label>Select List</label>
@@ -406,7 +438,72 @@
       <button type="submit">Submit</button>
     </form>
 
+
+  <pre><code>
+&#x3C;form&#x3E;
+
+  &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;label&#x3E;Text Input&#x3C;/label&#x3E;
+    &#x3C;input type=&#x22;text&#x22; placeholder=&#x22;text&#x22; /&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;label&#x3E;Password Input&#x3C;/label&#x3E;
+    &#x3C;input type=&#x22;password&#x22; placeholder=&#x22;password&#x22; /&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;label&#x3E;Date Input&#x3C;/label&#x3E;
+    &#x3C;input type=&#x22;date&#x22; /&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;label&#x3E;Email Input&#x3C;/label&#x3E;
+    &#x3C;input type=&#x22;email&#x22; placeholder=&#x22;email&#x22; /&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;label&#x3E;Search Input&#x3C;/label&#x3E;
+    &#x3C;input type=&#x22;search&#x22; placeholder=&#x22;search&#x22; /&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;label&#x3E;URL Input&#x3C;/label&#x3E;
+    &#x3C;input type=&#x22;url&#x22; placeholder=&#x22;select list&#x22; /&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;label&#x3E;Select List&#x3C;/label&#x3E;
+    &#x3C;select&#x3E;
+      &#x3C;option value=&#x22;stuff&#x22;&#x3E;stuff&#x3C;/option&#x3E;
+      &#x3C;option value=&#x22;two&#x22;&#x3E;Two&#x3C;/option&#x3E;
+      &#x3C;option value=&#x22;three&#x22;&#x3E;Three&#x3C;/option&#x3E;
+      &#x3C;option value=&#x22;four&#x22;&#x3E;Four&#x3C;/option&#x3E;
+    &#x3C;/select&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;form-check&#x22;&#x3E;
+    &#x3C;label class=&#x22;form-check-label&#x22;&#x3E;
+      &#x3C;input type=&#x22;checkbox&#x22; /&#x3E; Option One&#x3C;/label&#x3E;
+    &#x3C;label class=&#x22;form-check-label&#x22;&#x3E;
+      &#x3C;input type=&#x22;checkbox&#x22; /&#x3E; Option Two
+    &#x3C;/label&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;label&#x3E;Text Area&#x3C;/label&#x3E;
+    &#x3C;textarea&#x3E;&#x3C;/textarea&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;label for=&#x22;file&#x22;&#x3E;
+    &#x3C;input id=&#x22;file&#x22; class=&#x22;inputfile&#x22; name=&#x22;file&#x22; type=&#x22;file&#x22; /&#x3E;
+  &#x3C;/label&#x3E;
+  &#x3C;button type=&#x22;submit&#x22;&#x3E;Submit&#x3C;/button&#x3E;
+  
+&#x3C;/form&#x3E;
+  </code></pre>
   </div>
+
 </body>
 
 </html>
