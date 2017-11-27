@@ -2,6 +2,8 @@
 
 Base-CSS is just a set of baseline CSS files in both SASS and CSS to be used in projects.
 
+> [DEMO styles](https://joellongie.github.io/base-css/)
+
 ## Install
 - `npm install` will install all necessary packages
 
