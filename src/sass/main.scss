@@ -16,6 +16,7 @@ Website: http://joellongie.com
 // Base styles
 // ***********************************
 @import "base";
+@import 'layout';
 @import "typography"; // typography and links
 @import "media";
 
@@ -31,3 +32,8 @@ Website: http://joellongie.com
 // Navigation
 // ***********************************
 @import "navigation";
+
+// ***********************************
+// Content
+// ***********************************
+@import "content/sections";
