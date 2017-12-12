@@ -5,7 +5,10 @@ BaseCSS is just a set of baseline CSS files in both SASS and CSS to be used in p
 > [DEMO style guide](https://joellongie.github.io/basecss/)
 
 ## Install
-- `npm install` will install all necessary packages
+- `npm install` will install all necessary packages.
+- `npm run clean` removes dist folder.
+- `npm run dev` will run in dev mode.
+- `npm run build` to create dist folder
 
 ## Run
 - `npm run dev` use this for development, has sourcemaps. 
