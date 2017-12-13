@@ -76,5 +76,6 @@ table {
 .table-responsive {
   display: block;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;                 // has to be scroll, not auto
+  -webkit-overflow-scrolling: touch;  // momentum scrolling
 }
